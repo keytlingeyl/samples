@@ -1,0 +1,437 @@
+<!----------OWNER:Caitlin Gail D. Abizar---------->
+<!----------DATE CREATED: January 6, 2023--------->
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Sanperton Products - Hand Sanitizer</title>
+    <link rel="stylesheet" href="products.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Mali:wght@300;400;700&family=Noto+Emoji&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+<!----------------------Header-------------------->
+    <section class="header"> 
+        <nav>
+            <a href="index.html"> <img src="images/finallogo.png"> 
+            </a>
+            <input type="checkbox" style=opacity:0;>
+                <div class="toggle"> 
+                <span class="up common"></span>
+                <span class="mid common"></span>
+                <span class="down common"></span>
+                </div>
+            <div class="menu">
+                <h>MENU</h>
+                <ul class="nv"> 
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="contacts.html">LET'S TALK</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    
+    
+    
+<!--------------------Categories------------------>
+
+    <section class="category">
+        <h1>Scent Categories</h1>
+        <div class="container">
+        <div class="row">
+            <div class="colfloral">
+                <a href="#floral"><img src="images/c1.jpeg">
+                <div class="layer"><h3>FLORAL</h3>
+                </div></a>
+            </div>
+            <div class="colfresh">
+                <a href="#fresh"><img src="images/c2.jpeg">
+                <div class="layer"><h3>FRESH</h3>
+                </div></a>
+            </div>
+            <div class="colfruity">
+                <a href="#fruity"><img src="images/c3.jpeg">
+                <div class="layer"><h3>FRUITY</h3>
+                </div></a>
+            </div>
+            <div class="colwarm">
+                <a href="#warm"><img src="images/c4.jpeg">
+                <div class="layer"><h3>WARM</h3>
+                </div></a>
+            </div>
+        </div>
+        </div>
+        
+<!----------------Featured Products--------------->
+
+        <h1>Featured Products</h1>
+        <div class="row">
+            <div class="fcol">
+                <img src="images/plav.png">
+                <h3>Lavender</h3>
+                <ul>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star-o"></i></li>
+                </ul>
+                <h6><span>&#8369;</span>25</h6>
+                <button class="add1" onclick="myButton()"><h6>Add to Cart</h6>
+				</button>
+            </div>
+			
+			<span class="popup" id="myPop">
+				<table>
+					<tr>
+						<th>Quantity</th>
+						<th>Size</th>
+						<th>Subtotal</th>
+					</tr>
+					<tr>
+						<td><input type="number"</<td>
+						<td></<td>
+						<td></<td>
+					</tr>
+				</table>
+				</span>
+			
+			
+            <div class="fcol">
+                <img src="images/pmi.png">
+                <h3>Mint</h3>
+                <ul>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star-o"></i></li>
+                </ul>
+                <h6><span>&#8369;</span>35</h6>
+                <button class="add2"><h6>Add to Cart</h6></button>
+            </div>
+            
+            <div class="fcol">
+                <img src="images/ple.png">
+                <h3>Lemon</h3>
+                <ul>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star-o"></i></li>
+                </ul>
+                <h6><span>&#8369;</span>25</h6>
+                <button class="add3"><h6>Add to Cart</h6></button>
+            </div>
+            
+            <div class="fcol">
+                <img src="images/pv.png">
+                <h3>Vanilla</h3>
+                <ul>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star-o"></i></li>
+                </ul>
+                <h6><span>&#8369;</span>50</h6>
+                <button class="add4"><h6>Add to Cart</h6></button>
+            </div>
+        </div>
+        
+
+<!---------------------Products---------------------->
+        
+        
+        <h1 id="floral">Floral</h1>
+        <div class="row">
+            <div class="fcol">
+                <img src="images/plav.png">
+                <h3>Lavender</h3>
+                <ul>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star-o"></i></li>
+                </ul>
+                <h6><span>&#8369;</span>25</h6>
+                <button class="add1"><h6>Add to Cart</h6></button>
+            </div>
+            
+            <div class="fcol">
+                <img src="images/plAV.png">
+                <h3>Lilac</h3>
+                <ul>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star-o"></i></li>
+                </ul>
+                <h6><span>&#8369;</span>35</h6>
+                <button class="add2"><h6>Add to Cart</h6></button>
+            </div>
+            
+            <div class="fcol">
+                <img src="images/prosemary.png">
+                <h3>Rosemary</h3>
+                <ul>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star-o"></i></li>
+                </ul>
+                <h6><span>&#8369;</span>25</h6>
+                <button class="add3"><h6>Add to Cart</h6></button>
+            </div>
+            
+            <div class="fcol">
+                <img src="images/pv.png">
+                <h3>Vanilla</h3>
+                <ul>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star-o"></i></li>
+                </ul>
+                <h6><span>&#8369;</span>50</h6>
+                <button class="add4"><h6>Add to Cart</h6></button>
+            </div>
+        </div>
+		
+		<h1 id="fresh">Fresh</h1>
+		<div class="row">
+            <div class="fcol">
+                <img src="images/ple.png">
+                <h3>Lemon</h3>
+                <ul>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star-o"></i></li>
+                </ul>
+                <h6><span>&#8369;</span>25</h6>
+                <button class="add1"><h6>Add to Cart</h6></button>
+            </div>
+            
+            <div class="fcol">
+                <img src="images/pmi.png">
+                <h3>Mint</h3>
+                <ul>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star-o"></i></li>
+                </ul>
+                <h6><span>&#8369;</span>35</h6>
+                <button class="add2"><h6>Add to Cart</h6></button>
+            </div>
+            
+            <div class="fcol">
+                <img src="images/ple.png">
+                <h3>Orange</h3>
+                <ul>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star-o"></i></li>
+                </ul>
+                <h6><span>&#8369;</span>25</h6>
+                <button class="add3"><h6>Add to Cart</h6></button>
+            </div>
+            
+            <div class="fcol">
+                <img src="images/pv.png">
+                <h3>Vanilla</h3>
+                <ul>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star-o"></i></li>
+                </ul>
+                <h6><span>&#8369;</span>50</h6>
+                <button class="add4"><h6>Add to Cart</h6></button>
+            </div>
+        </div>
+		
+		<h1 id="fruity">Fruity</h1>
+		<div class="row">
+            <div class="fcol">
+                <img src="images/pblueberry.png">
+                <h3>Blueberry</h3>
+                <ul>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star-o"></i></li>
+                </ul>
+                <h6><span>&#8369;</span>25</h6>
+                <button class="add1"><h6>Add to Cart</h6></button>
+            </div>
+            
+            <div class="fcol">
+                <img src="images/ple.png">
+                <h3>Lemon</h3>
+                <ul>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star-o"></i></li>
+                </ul>
+                <h6><span>&#8369;</span>25</h6>
+                <button class="add3"><h6>Add to Cart</h6></button>
+            </div>
+            
+            <div class="fcol">
+                <img src="images/pstrawberry.png">
+                <h3>Strawberry</h3>
+                <ul>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star-o"></i></li>
+                </ul>
+                <h6><span>&#8369;</span>50</h6>
+                <button class="add4"><h6>Add to Cart</h6></button>
+            </div>
+        </div>
+		
+		<h1 id="warm">Warm</h1>
+		<div class="row">
+			<div class="fcol">
+                <img src="images/pblackpepper.png">
+                <h3>Black Pepper</h3>
+                <ul>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star-o"></i></li>
+                    <li><i class="fa fa-star-o"></i></li>
+                    <li><i class="fa fa-star-o"></i></li>
+                </ul>
+                <h6><span>&#8369;</span>50</h6>
+                <button class="add4"><h6>Add to Cart</h6></button>
+            </div>
+			
+            <div class="fcol">
+                <img src="images/pcinnamon.png">
+                <h3>Cinnamon</h3>
+                <ul>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star-o"></i></li>
+                    <li><i class="fa fa-star-o"></i></li>
+                    <li><i class="fa fa-star-o"></i></li>
+                </ul>
+                <h6><span>&#8369;</span>25</h6>
+                <button class="add1"><h6>Add to Cart</h6></button>
+            </div>
+            
+            <div class="fcol">
+                <img src="images/pteatree.png">
+                <h3>Tea Tree</h3>
+                <ul>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star-o"></i></li>
+                </ul>
+                <h6><span>&#8369;</span>35</h6>
+                <button class="add2"><h6>Add to Cart</h6></button>
+            </div>
+            
+            <div class="fcol">
+                <img src="images/pv.png">
+                <h3>Vanilla</h3>
+                <ul>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star-half-o"></i></li>
+                </ul>
+                <h6><span>&#8369;</span>50</h6>
+                <button class="add4"><h6>Add to Cart</h6></button>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+<!---------------Featured Products---------------->
+
+    <section class="featured"> 
+
+    </section>
+    
+    
+    
+    
+    
+    
+    
+<!----------------------Footer-------------------->
+
+    <footer>
+        <div class="row">
+            <div class="footcol">
+                <img src="images/finallogo.png" class="logo">
+                <p>Support our group by buying our products. Together, let's promote health and cleanliness. </p>
+            </div>
+            <div class="footcol">
+                <h3>Company Office<div class="underline"><span></span></div></h3>
+                
+                <p>Briones Bldg. Room E404 <br>8155 Dr Arcadio Santos Ave<br>
+                   Paranaque, 1700 Metro Manila</p>
+                <p class="email">sanperton@gmail.com</p>
+                <p class="h4">+63 9123456789</p>
+                
+            </div>
+            <div class="footcol">
+                <h3>Links<div class="underline"><span></span></div></h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contacts.html">Let's Talk</a></li>
+                </ul>
+            </div>
+            <div class="footcol">
+                <h3>Follow Us<div class="underline"><span></span></div></h3>
+                <div class="socials"><a href="https://www.facebook.com/caitlingail.abizar"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/keytlingeyl/"><i class="fa fa-instagram"></i></a>
+                <a href="https://t.me/keytlingeyl"><i class="fa fa-paper-plane"></i></a>
+                <a href=""><i class="fa fa-pinterest-p"></i></a>
+                
+                <div class="end">
+                    <p>@ 2032 by Caitlin Abizar</p>
+                    <p>Powered by Golgi Buddies</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

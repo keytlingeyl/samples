@@ -1,0 +1,292 @@
+<!----------OWNER:Caitlin Gail D. Abizar---------->
+<!----------DATE CREATED: January 24, 2023--------->
+
+<html> 
+<head> 
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Sanperton - Hand Sanitizer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Mali:wght@300;400;700&family=Noto+Emoji&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<style>
+html{
+    height: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mali', cursive;
+    
+}
+/*----------------------Body---------------------*/
+body{
+    background-color: #fbecdd;
+    display: flex;
+    flex-direction: column;
+	box-sizing: border-box;
+}
+
+/*---------------------Header--------------------*/
+.header{
+    width: 100%;
+    background-image: url('images/h1.png');
+    background-position: top;
+    background-size: cover;
+    position: sticky;
+	z-index: 10;
+}
+
+    /*---------------Navigation---------------*/
+.header nav{ 
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.header nav img{
+    width: 300px;
+}
+
+    /*-----------------Toggle-----------------*/
+input{
+    position: relative;
+    opacity: 0;
+}
+
+    /*------------------Menu------------------*/
+.menu{
+    flex: 1;
+    text-align: right;
+    position: relative;
+}
+.menu h{
+    display: none;
+}
+.menu ul li{
+    margin: 30px 0px 30px;
+    list-style: none;
+    display: inline-block;
+    padding: 0px 12px;
+    position: relative;
+    text-align: center;
+}
+.menu ul li a{
+    color: #9f6b53;
+    text-decoration: none;
+    font-size: 20px;
+}
+.menu ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #9f6b53;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.menu ul li:hover::after{
+    width: 100%;
+}
+
+
+/*----------------------Footer-------------------*/
+footer{
+    width: 100%;
+    bottom: 0;
+    background-image: url('images/footer.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: #9f6b53;
+    padding: 10px 0 10px;
+    font-size: 11px;
+    line-height: 20px;
+    
+    margin-top: auto;
+    
+}
+footer .row{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footcol{
+    flex-basis: 25%;
+    padding: 10px;
+}
+.footcol:nth-child(2), .col:nth-child(3){
+    flex-basis: 20%;
+}
+.footcol:nth-child(3), .col:nth-child(4){
+    flex-basis: 10%;
+}
+
+.logo{
+    width: 80%;
+    margin-bottom: 20px;
+}
+.footcol h3{
+    width: fit-content;
+    margin-bottom: 20px;
+    position: relative;
+    color: #9f6b53;
+}
+footer .footcol p{
+    width: fit-content;
+    margin-bottom: 20px;
+    position: relative;
+    color: #9f6b53;
+}
+
+.email{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin-top: -15px;
+}
+.footcol .h4{
+    margin-top: -10px;
+}
+footer ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: #9f6b53;
+}
+
+.socials .fa{
+    /*display: inline-block;*/
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    color: #9f6b53;
+    background-color: #fbecdd;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.socials .fa:hover{
+    color: #fbecdd;
+    background-color: #9f6b53;
+}
+.socials .end p{
+    margin-bottom: 10px;
+    font-weight: 500;
+    
+}
+    /*-----------Underline Animation-----------*/
+.underline{
+    width: 100%;
+    height: 5px;
+    background: #bd8f70;
+    border-radius: 3px;
+    position: absolute;
+    top: 25;
+    left: 0;
+    overflow: hidden;
+}
+.underline span{
+    width: 15px; 
+    height: 100%;
+    background: #9f6b53;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+	
+	
+	</style>
+	
+</head>
+<body> 
+<!----------------------Header-------------------->
+    <section class="header"> 
+        <nav>
+            <a href="index.html"> <img src="images/logo.png"> 
+            </a>
+            <input type="checkbox" style=opacity:0;>
+                <div class="toggle"> 
+                <span class="up common"></span>
+                <span class="mid common"></span>
+                <span class="down common"></span>
+            </div>
+            <div class="menu">
+                <h>MENU</h>
+                <ul> 
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="">LET'S TALK</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+	
+	
+	
+	
+	
+<!---------------------Footer--------------------->
+
+    <footer>
+        <div class="row">
+            <div class="footcol">
+                <img src="images/logo.png" class="logo">
+                <p>Support our group by buying our products. Together, let's promote health and cleanliness. </p>
+            </div>
+            <div class="footcol">
+                <h3>Company Office<div class="underline"><span></span></div></h3>
+                
+                <p>Briones Bldg. Room E404 <br>8155 Dr Arcadio Santos Ave<br>
+                   Paranaque, 1700 Metro Manila</p>
+                <p class="email">sanperton@gmail.com</p>
+                <p class="h4">+63 9123456789</p>
+                
+            </div>
+            <div class="footcol">
+                <h3>Links<div class="underline"><span></span></div></h3>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Let's Talk</a></li>
+                </ul>
+            </div>
+            <div class="footcol">
+                <h3>Follow/Hire Me<div class="underline"><span></span></div></h3>
+                <div class="socials"><a href="https://www.facebook.com/caitlingail.abizar"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/keytlingeyl/"><i class="fa fa-instagram"></i></a>
+                <a href="https://t.me/keytlingeyl"><i class="fa fa-paper-plane"></i></a>
+                <a href=""><i class="fa fa-pinterest-p"></i></a>
+                
+                <div class="end">
+                    <p>@ 2032 by Caitlin Abizar</p>
+                    <p>Powered by Golgi Buddies</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </footer>	
+	
+</body>
+</html>

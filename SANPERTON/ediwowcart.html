@@ -1,0 +1,206 @@
+<html>
+<head>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mali:wght@300;400;500;700&family=Noto+Emoji:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="cart.js"></script>
+</head>
+
+<body>
+
+<!----------------------Header-------------------->
+    <section class="header"> 
+        <nav>
+            <a href="index.html"> <img src="images/finallogo.png"> 
+            </a>
+            <input type="checkbox" style=opacity:0;>
+                <div class="toggle"> 
+                <span class="up common"></span>
+                <span class="mid common"></span>
+                <span class="down common"></span>
+                </div>
+            <div class="menu">
+                <h>MENU</h>
+                <ul class="nv"> 
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="contacts.html">LET'S TALK</a></li>
+					<li><a href="#cartpage" id="cart-icon"><i class="fa fa-shopping-cart">CART</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+	
+	
+	<div class="overlay" id="cartpage">
+	<div class="cart cartcart">
+	<div class="close">
+		<i class="fa fa-times" id="close-cart"></i>
+	</div>
+		<table class="table" >
+			<tr>
+				<th>Product</th>
+				<th>Size Variation</th>
+				<th>Quantity</th>
+				<th>Subtotal</th>
+			</tr>
+			<tr>
+				<td class="cart-content">
+					<div class="cart-box">
+						<img src="images/plav.png">
+						<div class="detail-box">
+							<p class="cart-product-title">Lavender</p>
+							<small class="cart-price">Price: <span>&#8369;</span>50</small>
+							<br>
+							<button class="cart-remove" type="button" href="">Remove</button>
+						</div>
+					</div>
+				</td>
+				
+				<td class="td"></td>
+				<td class="td" class="cart-quantity"><input type="number" value="1"></td>
+				<td class="td" class="cart-subtotal"><span>&#8369;</span>50.00</td>
+			</tr>
+		</table>	
+		<div class="total">
+			<table>
+				<tr>
+					<td>Subtotal</td>
+					<td><span>&#8369;</span>150.00</td>
+				</tr>
+				<tr>
+					<td>Tax</td>
+					<td><span>&#8369;</span>20.00</td>
+				</tr>
+				<tr>
+					<td class="total-title">Total</td>
+					<td class="total-price"><span>&#8369;</span>170.00</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	</div>
+	
+	
+	<h2 class="section-title">Shop Products</h2>
+	<section class="shop container">
+
+		<div class="shop-content">
+			<div class="product-box">
+				<img src="images/plav.png" class="product-img">
+				<h2 class="product-title">Lavender</h2>
+				<span class=price">$25</span>
+				<i class='bx bx-shopping-bag add-cart'></i>
+			</div>
+		</div>
+		
+		
+		<div class="shop-content">
+			<div class="product-box">
+				<img src="images/ple.png" class="product-img">
+				<h2 class="product-title">Lemon</h2>
+				<span class=price">$75</span>
+				<i class='bx bx-shopping-bag add-cart'></i>
+			</div>
+		</div>
+		
+		<div class="shop-content">
+			<div class="product-box">
+				<img src="images/pv.png" class="product-img">
+				<h2 class="product-title">Vanilla</h2>
+				<span class=price">$55</span>
+				<i class='bx bx-shopping-bag add-cart'></i>
+			</div>
+		</div>
+		
+		<div class="shop-content">
+                <img src="images/pmi.png" class="product-img">
+                <h3>Mint</h3>
+                <ul>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star-o"></i></li>
+                </ul>
+                <h6><span>&#8369;</span>35</h6>
+                <button class="add2"><h6>Add to Cart</h6></button>
+        </div>
+	</section>
+	<div class="cart">
+		<h2 class="cart-title">Your Cart</h2>
+		<div class="cart-content">
+			<div class="cart-box">
+			<img src="images/pmi.png" class="cart-img">
+			<div class="detail-box">
+				<div class="cart-product-title">Mint</div>
+				<div class="cart-price"><span>&#8369;</span>35</div>
+				<input type="number" value="1" class="cart-quantity">
+			</div>
+			
+				<i class="fa fa-trash">Remove</i>
+			
+			</div>
+		</div>
+		
+		
+		<div class="total">
+			<div class="total-title">Total</div>
+			<div class="total-price"><span>&#8369;</span>0</div>
+		</div>
+		
+		<button type="button" class="btn-buy">Buy Now</button>
+		
+		<i class="fa fa-times" id="close-cart"></i>
+	</div>
+	
+	<div class="cart cartcart">
+	<div class="close">
+		<i class="fa fa-times" id="close-cart"></i>
+	</div>
+		<table class="table" >
+			<tr>
+				<th>Product</th>
+				<th>Size Variation</th>
+				<th>Quantity</th>
+				<th>Subtotal</th>
+			</tr>
+			<tr>
+				<td class="cart-content">
+					<div class="cart-box">
+						<img src="images/plav.png">
+						<div class="detail-box">
+							<p class="cart-product-title">Lavender</p>
+							<small class="cart-price">Price: <span>&#8369;</span>50</small>
+							<br>
+							<button class="cart-remove" type="button" href="">Remove</button>
+						</div>
+					</div>
+				</td>
+				<td class="td"></td>
+				<td class="td" class="cart-quantity"><input type="number" value="1"></td>
+				<td class="td" class="cart-subtotal"><span>&#8369;</span>50.00</td>
+			</tr>
+		</table>	
+		<div class="total">
+			<table>
+				<tr>
+					<td>Subtotal</td>
+					<td><span>&#8369;</span>150.00</td>
+				</tr>
+				<tr>
+					<td>Tax</td>
+					<td><span>&#8369;</span>20.00</td>
+				</tr>
+				<tr>
+					<td class="total-title">Total</td>
+					<td class="total-price"><span>&#8369;</span>170.00</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
