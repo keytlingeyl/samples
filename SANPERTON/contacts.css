@@ -1,0 +1,427 @@
+/*---------OWNER: Caitlin Gail D. Abizar---------*/
+/*---------DATE CREATED: January 2, 2023---------*/
+html {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Mali", cursive;
+}
+/*----------------------Body---------------------*/
+body {
+  background-color: #fbecdd;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/*---------------------Header--------------------*/
+.header {
+  width: 100%;
+  background: url("images/h1.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+/*---------------Navigation---------------*/
+.header nav {
+  display: flex;
+  padding: 0% 3%;
+  justify-content: space-between;
+  align-items: center;
+}
+.header nav img {
+  width: 300px;
+}
+
+/*-----------------Toggle-----------------*/
+input {
+  position: relative;
+  opacity: 0;
+}
+
+/*------------------Menu------------------*/
+.menu {
+  flex: 1;
+  text-align: right;
+  position: relative;
+}
+.menu h {
+  display: none;
+}
+.menu ul li {
+  margin: 30px 0px 30px;
+  list-style: none;
+  display: inline-block;
+  padding: 0px 12px;
+  position: relative;
+  text-align: center;
+}
+.menu ul li a {
+  color: #9f6b53;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.menu ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #9f6b53;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.menu ul li:hover::after {
+  width: 100%;
+}
+
+/*---------Contact Form--------*/
+.overlay {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.wrapper {
+  margin: 70px auto 70px;
+  padding: 20px;
+  background: #e7e7e7;
+  border-radius: 5px;
+  width: 50%;
+  height: auto;
+  position: relative;
+  transition: all 5s ease;
+}
+.wrapper h2 {
+  margin-top: 0;
+  color: #9f6b53;
+}
+.wrapper .close {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #9f6b53;
+}
+.wrapper .laman {
+  max-height: 70%;
+  overflow: auto;
+}
+.lalagyan {
+  border-radius: 5px;
+  background: #e7e7e7;
+  padding: 20px 0;
+}
+form label {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: #9f6b53;
+}
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #9f6b53;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background: #fff;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #9f6b53;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background: #fff;
+  opacity: 1;
+}
+input[type="submit"] {
+  background: #9f6b53;
+  color: #f5be80;
+  padding: 15px 50px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  opacity: 1;
+}
+
+/*----------------------Footer-------------------*/
+footer {
+  width: 100%;
+  bottom: 0;
+  background-image: url("images/footer.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: #9f6b53;
+  padding: 10px 0 10px;
+  font-size: 11px;
+  line-height: 20px;
+
+  margin-top: auto;
+}
+footer .row {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.footcol {
+  flex-basis: 25%;
+  padding: 10px;
+}
+.footcol:nth-child(2),
+.col:nth-child(3) {
+  flex-basis: 20%;
+}
+.footcol:nth-child(3),
+.col:nth-child(4) {
+  flex-basis: 10%;
+}
+
+.logo {
+  width: 80%;
+  margin-bottom: 20px;
+}
+.footcol h3 {
+  width: fit-content;
+  margin-bottom: 20px;
+  position: relative;
+  color: #9f6b53;
+}
+footer .footcol p {
+  width: fit-content;
+  margin-bottom: 20px;
+  position: relative;
+  color: #9f6b53;
+}
+
+.email {
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin-top: -15px;
+}
+.footcol .h4 {
+  margin-top: -10px;
+}
+footer ul li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #9f6b53;
+}
+
+.socials .fa {
+  /*display: inline-block;*/
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  color: #9f6b53;
+  background-color: #fbecdd;
+  margin-top: 10px;
+  margin-right: 5px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.socials .fa:hover {
+  color: #fbecdd;
+  background-color: #9f6b53;
+}
+.socials .end p {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+/*-----------Underline Animation-----------*/
+.underline {
+  width: 100%;
+  height: 5px;
+  background: #bd8f70;
+  border-radius: 3px;
+  position: absolute;
+  top: 25;
+  left: 0;
+  overflow: hidden;
+}
+.underline span {
+  width: 15px;
+  height: 100%;
+  background: #9f6b53;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+  0% {
+    left: -20px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/*------------Phone Portrait Orientation---------*/
+
+@media screen and (max-width: 700px) {
+  body {
+    padding: 650px;
+  }
+  /*----------------Menu Name---------------*/
+  .menu h {
+    display: block;
+    position: relative;
+    font-size: 40px;
+    padding: 5px 25px;
+    color: #9f6b53;
+    margin-bottom: -30px;
+  }
+
+  /*--------Front Page Center Text----------*/
+
+  .text-box h1 {
+    font-size: 25px;
+  }
+  .text-box p {
+    font-size: 14px;
+    line-height: 30px;
+  }
+  .text-box a {
+    font-size: 14px;
+  }
+
+  /*----------------Navigation---------------*/
+
+  .menu ul li {
+    display: block;
+  }
+  .menu {
+    position: absolute;
+    background: #f5be80;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 1;
+    display: none;
+    transform: translateX(0px);
+    transition: 1s ease out;
+    /*display: none;*/
+  }
+  .menu {
+    transform: translateX(-200px);
+    /*width:200px;
+        right: -200px;*/
+  }
+  .menu ul {
+    padding: 30px;
+  }
+
+  /*-----------------Toggle------------------*/
+
+  input {
+    /*display: none;*/
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 20px;
+    left: 87%;
+    z-index: 3;
+    opacity: 0;
+  }
+
+  .toggle {
+    position: absolute;
+    align-content: right;
+    width: 30px;
+    height: 30px;
+    top: 20px;
+    left: 87%;
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: transparent;
+  }
+  .toggle .common {
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: #9f6b53;
+    border-radius: 50px;
+    transition: 0.3s ease;
+  }
+  .toggle .up {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .toggle .mid {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .toggle .down {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  input:checked ~ .toggle .up {
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(45deg);
+  }
+  input:checked ~ .toggle .down {
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(-45deg);
+  }
+  input:checked ~ .toggle .mid {
+    opacity: 0;
+    transform: translateX(-70px);
+  }
+  input:checked ~ .menu {
+    transform: translateX(-200px);
+    display: block;
+    transition: 1s ease;
+  }
+
+  /*---------------Objectives-----------------*/
+
+  .row {
+    flex-direction: column;
+  }
+}
